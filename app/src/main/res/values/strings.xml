@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LawyerUp2</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="Title_Feed">Feed</string>
+    <string name="Title_Cases">Cases</string>
+    <string name="Title_Settings">Settings</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+
+    </string>
+    <string name="action_settings">Settings</string>
+</resources>

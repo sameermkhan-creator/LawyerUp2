@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1083412289944",
+    "project_id": "softwareproject-ee133",
+    "storage_bucket": "softwareproject-ee133.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083412289944:android:ca08410ba8c615bc62b3ed",
+        "android_client_info": {
+          "package_name": "com.example.lawyerup2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083412289944-b9cpe6feemganajb49c1reqf3v500i6b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lawyerup2",
+            "certificate_hash": "3e33d9f286a951464af27cc57dbc6ea65d1f2608"
+          }
+        },
+        {
+          "client_id": "1083412289944-snabegb618uhhfdq1gp1vcq9bfcb5qgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzLn0oCLyOkKUDrmbJFzELmntJcSMYBd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083412289944-snabegb618uhhfdq1gp1vcq9bfcb5qgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
