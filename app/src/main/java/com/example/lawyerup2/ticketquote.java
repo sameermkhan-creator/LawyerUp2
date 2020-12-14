@@ -31,6 +31,15 @@ public class ticketquote extends AppCompatActivity {
         String courtDate = sh.getString("courtdate", "");
         TextView courtdate = (TextView)findViewById(R.id.courtDate);
         courtdate.setText(courtDate);
+        String accident = sh.getString("accident", "");
+        TextView accidentTV = (TextView)findViewById(R.id.accident);
+        accidentTV.setText(accident);
+        String driver = sh.getString("driver", "");
+        TextView driverTV = (TextView)findViewById(R.id.driver);
+        driverTV.setText(driver);
+        String violations = sh.getString("violations", "");
+        TextView violationsTV = (TextView)findViewById(R.id.numOfViolations);
+        violationsTV.setText(""+violations);
         Button btn4 = findViewById(R.id.exitCase);
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override

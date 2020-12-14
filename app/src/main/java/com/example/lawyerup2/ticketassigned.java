@@ -38,7 +38,7 @@ public class ticketassigned extends AppCompatActivity {
         final ListView listview = (ListView) findViewById(R.id.listview1);
         String[] values = new String[] { "Toronto", "Vaughan", "Oakville",
                 "Mississauga", "Markham", "Burlington", "Oshawa", "Brampton",
-                "Milton", "Richmond Hill", "Ajax", "Pickering", "Whitby" };
+                "Milton", "Richmond Hill", "Ajax", "Pickering", "Whitby", "None" };
 // Create a List from String Array elements
         final List<String> values_list = new ArrayList<String>(Arrays.asList(values));
         final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>
