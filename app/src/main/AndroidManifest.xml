@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LawyerUp2">
-        <activity android:name=".ticketassigned"></activity>
+        <activity android:name=".ticketquote"></activity>
+        <activity android:name=".ticketassigned" />
         <activity android:name=".aboutticket" />
         <activity android:name=".numviolations" />
         <activity android:name=".newcase" />
