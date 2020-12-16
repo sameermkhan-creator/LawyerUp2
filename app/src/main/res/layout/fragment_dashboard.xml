@@ -18,6 +18,7 @@
         app:layout_constraintVertical_bias="0.028"
         app:srcCompat="@drawable/lawyeruplogo" />
 
+
     <TextView
         android:id="@+id/text_dashboard"
         android:layout_width="wrap_content"
@@ -28,11 +29,24 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.357"
+        app:layout_constraintVertical_bias="0.254"
         tools:text="This is where you will see your active cases" />
+
+    <TextView
+        android:id="@+id/caseNumber"
+        android:layout_width="417dp"
+        android:layout_height="57dp"
+        android:text="   CASE# 8111 UNDER REVIEW"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/ticketbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_dashboard"
+        app:layout_constraintVertical_bias="0.118" />
 
     <Button
         android:id="@+id/ticketbutton"
@@ -42,20 +56,11 @@
         android:text="Fight a new ticket"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.858"
+        app:layout_constraintVertical_bias="0.877"
         tools:background="@drawable/button_custom" />
 
-    <ListView
-
-        android:layout_width="391dp"
-        android:layout_height="282dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/ticketbutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_dashboard" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
