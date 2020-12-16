@@ -16,7 +16,7 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="187dp"
         android:layout_marginBottom="648dp"
-        android:text="Where did you get your ticket?"
+        android:text="@string/txtWhereGotTicket"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

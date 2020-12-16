@@ -19,41 +19,12 @@
         app:srcCompat="@drawable/lawyeruplogo" />
 
 
-    <TextView
-        android:id="@+id/text_dashboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lineSpacingExtra="2sp"
-        android:textColor="#2554c0"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.254"
-        tools:text="This is where you will see your active cases" />
-
-    <TextView
-        android:id="@+id/caseNumber"
-        android:layout_width="417dp"
-        android:layout_height="57dp"
-        android:text="   CASE# 8111 UNDER REVIEW"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/ticketbutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.753"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_dashboard"
-        app:layout_constraintVertical_bias="0.118" />
-
     <Button
         android:id="@+id/ticketbutton"
         android:layout_width="335dp"
         android:layout_height="68dp"
         android:background="@drawable/button_custom"
-        android:text="Fight a new ticket"
+        android:text="@string/txtFightNewTicket"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
@@ -62,5 +33,16 @@
         app:layout_constraintVertical_bias="0.877"
         tools:background="@drawable/button_custom" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="382dp"
+        android:layout_height="380dp"
+        android:id="@+id/firestore_list"
+        app:layout_constraintBottom_toTopOf="@+id/ticketbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.363" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

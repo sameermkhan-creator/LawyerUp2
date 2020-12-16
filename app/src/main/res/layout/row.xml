@@ -16,7 +16,7 @@
     android:layout_width="match_parent">
 
     <TextView
-        android:text="Title"
+        android:text="@string/feedTxtTitle"
         android:id="@+id/txtTitle"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -27,7 +27,7 @@
 
 
     <TextView
-        android:text="2017-04-04 12:30:00"
+        android:text="@string/feedTxtPubDate"
         android:id="@+id/txtPubDate"
         android:textSize="12sp"
         android:textStyle="italic"
@@ -36,7 +36,7 @@
         />
 
     <TextView
-        android:text="Content"
+        android:text="@string/feedContent"
         android:id="@+id/txtContent"
         android:textSize="14sp"
         android:textStyle="normal"

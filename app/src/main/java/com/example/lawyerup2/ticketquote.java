@@ -85,12 +85,12 @@ public class ticketquote extends AppCompatActivity {
             Map<String, Object> data = new HashMap<>();
             data.put("Where", s1);
             data.put("Assigned", s2);
-            data.put("Ticket Date:", ticketDate);
-            data.put("Court Date", courtDate);
+            data.put("TicketDate", ticketDate);
+            data.put("CourtDate", courtDate);
             data.put("Accident", accident);
             data.put("Driver", driver);
             data.put("Violations", violations);
-            data.put("Case #", random);
+            data.put("CaseNumber", random);
            // data.put("User ID",userID);
 
 documentReference.set(data).addOnSuccessListener(new OnSuccessListener<Void>() {

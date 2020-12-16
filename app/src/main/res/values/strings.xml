@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LawyerUp2</string>
+    <string name="app_name">LawyerUp</string>
     <string name="title_activity_main2">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
@@ -12,4 +12,51 @@
 
     </string>
     <string name="action_settings">Settings</string>
+    <string name="ticketTitle">Title</string>
+    <string name="ticketCourtDate">2017-04-04 12:30:00</string>
+    <string name="ticketAssignedWhere">Where court date is assigned.</string>
+    <string name="feedTxtTitle">Title</string>
+    <string name="feedTxtPubDate">2017-04-04 12:30:00</string>
+    <string name="feedContent">Content</string>
+    <string name="txtLogoutBtn">Log Out</string>
+    <string name="txtFightNewTicket">FIGHT A NEW TICKET</string>
+    <string name="txtWhereGotTicket">Where did you get your ticket?</string>
+    <string name="txtNumberOfViolations"># Of Violations</string>
+    <string name="txtAccident">Accident:</string>
+    <string name="txtLicenses">Valid License:</string>
+    <string name="txtTicketDate">Ticket Date:</string>
+    <string name="txtCourtDate">Court Date:</string>
+    <string name="txtCourtLocation">Court Location:</string>
+    <string name="txtInfractionLocation">Infraction Location:</string>
+    <string name="txtCreateCase">CREATE</string>
+    <string name="txtExitCase">EXIT</string>
+    <string name="placeHolderTxtView">TextView</string>
+    <string name="txtwhichCourtAssignedto">Which court is your ticket assigned to?</string>
+    <string name="txtCancelTktBtn">CANCEL</string>
+    <string name="signupTxtFullName">Full Name</string>
+    <string name="txtLoginBtn">Login</string>
+    <string name="txtSignupBtn">Signup</string>
+    <string name="txtSignupEmail">Email</string>
+    <string name="txtSignupBtmBtn">SIGN UP</string>
+    <string name="txtForgotPswd">Forgot Password?</string>
+    <string name="txtSignupPswd">Password</string>
+    <string name="numOfViolationsRecvd">How many violations did you receive?</string>
+    <string name="numOfTktsGiven">Number of tickets that were given:</string>
+    <string name="continueToViolations">CONTINUE</string>
+    <string name="btnTakePhotoTkt">TAKE A PHOTO OF YOUR TICKET</string>
+    <string name="uploadPhotoMsg">Upload a photo of your ticket for the most accurate quote.</string>
+    <string name="strtNewCase">START A NEW CASE</string>
+    <string name="uploadPhotoMsg2">I will provide one later</string>
+    <string name="msgTellUsMore">Tell us more about your ticket.</string>
+    <string name="whenGotTkt">When did you get your ticket?</string>
+    <string name="alreadyDateSchedule">Do you already have a court date scheduled?</string>
+    <string name="optionOne">NO</string>
+    <string name="optionTwo">YES</string>
+    <string name="wasThereAccident">Was there an accident involved?</string>
+    <string name="wasThereValidLicense">Do you have a valid drivers licences?</string>
+
+    
+
+
+
 </resources>

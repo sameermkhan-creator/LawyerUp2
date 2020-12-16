@@ -80,11 +80,12 @@ public class MainActivity extends AppCompatActivity {
 
             if (TextUtils.isEmpty(password)) {
                 personPassword.setError("Password Required");
-            }
+                return;
+            }/*
             if (password.length() < 6) {
                 personPassword.setError("Password must be >= 6 Characters");
                 return;
-            }
+            }*/
             progressBar.setVisibility(View.VISIBLE);
 
 
