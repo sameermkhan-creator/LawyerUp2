@@ -18,6 +18,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.mystifydev.lawyerup2.ui.notifications.SettingsFragment;
 
 public class signup extends AppCompatActivity {
     EditText personEmail, personPassword, personName;
@@ -25,6 +28,9 @@ public class signup extends AppCompatActivity {
     FirebaseAuth fAuth;
     ProgressBar progressBar;
     TextView t;
+    FirebaseDatabase rootNode;
+    DatabaseReference reference;
+    String userID;
 
 
     @Override
@@ -51,6 +57,7 @@ public class signup extends AppCompatActivity {
         registerAccountBtn = findViewById(R.id.signupbutton);
         loginAccountbtn = findViewById(R.id.loginbutton);
         fAuth = FirebaseAuth.getInstance();
+
         progressBar = findViewById(R.id.progressBar);
 
 
@@ -60,8 +67,11 @@ public class signup extends AppCompatActivity {
         }
 
         registerAccountBtn.setOnClickListener(v -> {
+
+
             String email = personEmail.getText().toString().trim();
             String password = personPassword.getText().toString().trim();
+            String  name = personName.getText().toString().trim();
 
 
             if (TextUtils.isEmpty(email)) {
@@ -79,7 +89,22 @@ public class signup extends AppCompatActivity {
             progressBar.setVisibility(View.VISIBLE);
             fAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
                 if (task.isSuccessful()) {
+                    userID = fAuth.getCurrentUser().getUid();
+                    rootNode = FirebaseDatabase.getInstance();
+                    reference = rootNode.getReference("users");
+
+                    //get values
+
+                    UserHelperClass helperClass = new UserHelperClass(email, password, name);
+                    reference.child(userID).setValue(helperClass);
+
+                  //  Intent intent = new Intent(getApplicationContext(), SettingsFragment.class);
+                   // intent.putExtra("name1",name);
+                   // intent.putExtra("email1",email);
+
+
                     Toast.makeText(signup.this, "User Created", Toast.LENGTH_SHORT).show();
+
                     startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                 } else {
                     Toast.makeText(signup.this, "Error!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
