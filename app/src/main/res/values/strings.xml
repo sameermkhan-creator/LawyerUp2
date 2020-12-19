@@ -6,12 +6,12 @@
     <string name="title_notifications">Notifications</string>
     <string name="Title_Feed">Ontario Statutes Feed</string>
     <string name="Title_Cases">Cases</string>
-    <string name="Title_Settings">Settings</string>
+    <string name="Title_Settings">Profile</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="large_text">
 
     </string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Profile</string>
     <string name="ticketTitle">Title</string>
     <string name="ticketCourtDate">2017-04-04 12:30:00</string>
     <string name="ticketAssignedWhere">Where court date is assigned.</string>
@@ -34,6 +34,7 @@
     <string name="txtwhichCourtAssignedto">Which court is your ticket assigned to?</string>
     <string name="txtCancelTktBtn">CANCEL</string>
     <string name="signupTxtFullName">Full Name</string>
+    <string name="twitterUsername">\@twitter</string>
     <string name="txtLoginBtn">Login</string>
     <string name="txtSignupBtn">Signup</string>
     <string name="txtSignupEmail">Email</string>

@@ -48,12 +48,14 @@ public class SettingsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_settings, container, false);
 
 
-        fullName = view.findViewById(R.id.profileEmailAddress);
-        fullEmail = view.findViewById(R.id.profileFullName);
+        fullEmail = view.findViewById(R.id.profileEmailAddress);
+        fullName = view.findViewById(R.id.profileFullName);
         //email2 = "test123456@gmail.com";
         String email2= fAuth.getCurrentUser().getEmail();
+        String name2= fAuth.getCurrentUser().getDisplayName();
         database = FirebaseDatabase.getInstance();
         userRef = database.getReference(USERS);
+
 
         userRef.addValueEventListener(new ValueEventListener() {
             @Override
